@@ -39,7 +39,9 @@ nav button:last-child{
 h1{
     font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 90px;}
+  font-size: 90px;
+}
+
 .titolo>div>p{
     width: 80%;
     margin-top: 1.6em;
@@ -66,39 +68,34 @@ h1{
 
 .contenitore{ 
     display: flex;
-  /*   justify-content: center; */
+    justify-content: center;
     margin-top: 50px;
-    
+    border-bottom: 1px solid rgba(128, 128, 128, 0.473);
+  
 }
-.dflex{
+.container{
     display: flex;
     flex-direction: column;
-    
-}
-
-.container{
- 
-
-border-bottom: 1px solid rgba(128, 128, 128, 0.473);
+    width: 70%;
 }
 .trending{
     display: flex;
     align-items: center;
-    width: 90%;
+
 }
 .lavagna{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 50px;
-    width: 90%;
-    flex-wrap: wrap;
+   flex-wrap: wrap;
 }
+  
 .postit{
-    width: 400px;
+    width: 500px;
     height: 150px;
     position: relative;
-   
+  
     }
 main>article>p{
     margin-top: 2em;
