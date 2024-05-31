@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+/* /////////////////HEADER////////////////////// */
+header{
+    background-color: #FFC017;
+    border-bottom: 1px solid black;
+}
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+button{
+    border: none;
+    background-color: #FFC017;
+    margin: 1.2em;
+}
+nav button:last-child{
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 0.6em;
+    width: 100px;
+}
+.titolo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 90px;}
+.titolo>div>p{
+    width: 80%;
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
+
+}
+.titolo>div>button{
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 0.6em;
+    width: 150px;
+    margin:0;
+    margin-top:1em;
+    margin-bottom: 1em;
+}
+
+.lettere{
+    width: 500px;
+    height: 300px;
+    background-color: aqua;
+}
+/* /////////////////////MAIN/////////////////// */
+
+.contenitore{ 
+    display: flex;
+  /*   justify-content: center; */
+    margin-top: 50px;
+    
+}
+.dflex{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container{
+ 
+
+border-bottom: 1px solid rgba(128, 128, 128, 0.473);
+}
+.trending{
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+.lavagna{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 90%;
+    flex-wrap: wrap;
+}
+.postit{
+    width: 400px;
+    height: 150px;
+    position: relative;
+   
+    }
+main>article>p{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.postit>span{
+    font-size: xx-large;
+    color:grey;
+    position: absolute;
+    left:-40px;
+    
+}
+h6{
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style:normal;
+  font-size: smaller;
+  margin-top: 1em;
+  
+}
+h4{
+    font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style:normal;
+  font-size: large;
+  margin-top: 0.8em;
+}
+.postit>p{
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style:normal;
+  font-size: smaller;
+  color:rgb(146, 146, 146);
+  margin-top: 1em;
+}
+.logos{
+    display: flex;
+    align-items: center;
+    
+}
+.logos>img{
+    border-radius: 50%;
+    width: 7%;
+
+}
+
+.Discover{
+    width: 430px;
+    height: 300px;
+    
+    display: flex;
+    flex-direction: column;
+  
+    margin-bottom: 1em;
+}
+.news{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    
+    margin-top: 3em;
+}
+.colonne{
+    display: flex;
+   flex-direction: column;
+}
+.notizia{
+    
+    display: flex;
+    
+    margin-bottom: 2em;
+   
+
+}
+.cornice{
+    
+    display: flex;
+    justify-content: flex-end;
+    width: 150px;
+    object-fit: contain;
+}
+.foto{
+  width: 100%;
+}
+.lettura{
+    width: 500px;
+    
+}
+h6>span{
+    padding: 0.3em;
+    width: 150px;
+    height: 10px;
+    background-color: #F2F3F3;
+    border-radius: 10px;
+}
+
+
+
+h5{
+    font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style:normal;
+  font-size: medium;
+  margin-top: 0.8em;
+}
+.stickers{
+    margin: 0.5em;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid grey;
+    padding-bottom: 2em;
+}
+
+.stickers>div>p{
+    padding:0.5em;
+    border: 1px solid grey;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+}
+#fine>.btn>button{
+    margin: 0;
+
+    background-color: white;
+    color: gray;
+}
+#fine{
+    display: flex;
+    align-content: space-evenly;
+}
