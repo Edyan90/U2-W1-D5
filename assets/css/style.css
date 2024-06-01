@@ -8,6 +8,7 @@ body{
     font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
+  display: flexbox;
 }
 /* /////////////////HEADER////////////////////// */
 header{
@@ -15,14 +16,20 @@ header{
     border-bottom: 1px solid black;
 }
 .navBar{
+    background-color: #FFC017;
     display: flex;
     justify-content: space-around;
     border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 300ms ease;
 }
 button{
     border: none;
-    background-color: #FFC017;
+    background-color: transparent;
     margin: 1.2em;
+    transition: background-color 300ms ease;
 }
 nav button:last-child{
     background-color: black;
@@ -87,7 +94,6 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
    flex-wrap: wrap;
 }
   
@@ -145,11 +151,10 @@ h4{
 .Discover{
     width: 430px;
     height: 300px;
-    
     display: flex;
     flex-direction: column;
-  
     margin-bottom: 1em;
+    align-items: center;
 }
 .news{
     display: flex;
@@ -202,10 +207,11 @@ h5{
   margin-top: 0.8em;
 }
 .stickers{
+    width: 80%;
     margin: 0.5em;
     display: flex;
     justify-content: space-evenly;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
     border-bottom: 1px solid grey;
     padding-bottom: 2em;
@@ -222,11 +228,50 @@ h5{
 }
 #fine>.btn>button{
     margin: 0;
-
+    padding-top:10px ;
     background-color: white;
     color: gray;
 }
 #fine{
     display: flex;
-    align-content: space-evenly;
+    justify-content: center;
+    width: 300px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+align-content: space-around;
+}
+/* @keyframes fadeIn {
+    0%{
+        
+    }
+    10% {
+       
+    }
+    30% {
+        
+    }
+    80%{
+        
+    }
+    100%{
+        
+        
+        
+    }
+}} */
+
+.navBarWhite
+        {background-color: white;}
+
+#btnGreen{
+background-color: green;
+color: white;
+border-radius: 50px;
+padding: 0.6em;
+width: 100px;}
+.btnWhite{
+    background-color: white;
 }
