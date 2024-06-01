@@ -21,3 +21,19 @@ window.onscroll = function () {
     });
   }
 };
+
+window.onload = function () {
+  const M = document.getElementsByTagName("g");
+  console.log(M.length);
+  for (let i = 0; i < M.length; i++) {
+    let opacityCasuale = Math.floor(Math.random() * 2);
+    console.log(opacityCasuale);
+    M[i].setAttribute("style", `opacity: ${opacityCasuale}`);
+  }
+  setInterval(() => {
+    let indexM = Math.floor(Math.random() * M.length);
+    let currentOpacity = parseFloat(M[indexM].style.opacity);
+    let newOpacity = currentOpacity === 0 ? 1 : 0;
+    M[indexM].setAttribute("style", `opacity: ${newOpacity}`);
+  }, 200);
+};

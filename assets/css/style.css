@@ -9,17 +9,25 @@ body{
   font-weight: 500;
   font-style: normal;
   display: flexbox;
+  
 }
 /* /////////////////HEADER////////////////////// */
 header{
     background-color: #FFC017;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #191919;
+    
 }
+h1{
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 90px;
+}
+
 .navBar{
     background-color: #FFC017;
     display: flex;
     justify-content: space-around;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #191919;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -32,21 +40,23 @@ button{
     transition: background-color 300ms ease;
 }
 nav button:last-child{
-    background-color: black;
+    background-color: #191919;
     color: white;
     border-radius: 50px;
     padding: 0.6em;
     width: 100px;
 }
 .titolo{
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
-h1{
-    font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 90px;
+.titolo>div:first-child{
+    width: 800px;
+    height: 400px;
+    padding-top: 3em;
 }
 
 .titolo>div>p{
@@ -56,7 +66,7 @@ h1{
 
 }
 .titolo>div>button{
-    background-color: black;
+    background-color: #191919;
     color: white;
     border-radius: 50px;
     padding: 0.6em;
@@ -68,9 +78,15 @@ h1{
 
 .lettere{
     width: 500px;
-    height: 300px;
-    background-color: aqua;
+    height: 400px;
+    
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    
 }
+
 /* /////////////////////MAIN/////////////////// */
 
 .contenitore{ 
@@ -158,7 +174,7 @@ h4{
 }
 .news{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 50px;
     
     margin-top: 3em;
@@ -243,26 +259,6 @@ h5{
     flex-wrap: wrap;
 align-content: space-around;
 }
-/* @keyframes fadeIn {
-    0%{
-        
-    }
-    10% {
-       
-    }
-    30% {
-        
-    }
-    80%{
-        
-    }
-    100%{
-        
-        
-        
-    }
-}} */
-
 .navBarWhite
         {background-color: white;}
 
