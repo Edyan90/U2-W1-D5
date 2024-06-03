@@ -1,3 +1,7 @@
+window.onload = (event) => {
+  console.log("page is fully loaded");
+};
+
 const navBar = document.querySelector(".navBar");
 const buttons = navBar.querySelectorAll("button");
 const black = document.getElementById("btnBlack");
@@ -35,5 +39,5 @@ window.onload = function () {
     let currentOpacity = parseFloat(M[indexM].style.opacity);
     let newOpacity = currentOpacity === 0 ? 1 : 0;
     M[indexM].setAttribute("style", `opacity: ${newOpacity}`);
-  }, 200);
+  }, 300);
 };
