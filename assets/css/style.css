@@ -85,7 +85,6 @@ nav button:last-child{
     top: 0;
     right: 0;
     
-
 }
 
 /* /////////////////////MAIN/////////////////// */
@@ -175,8 +174,8 @@ h4{
 }
 .news{
     display: flex;
-    justify-content: space-evenly;
-    gap: 50px;
+    justify-content: center;
+    gap: 300px;
     
     margin-top: 3em;
 }

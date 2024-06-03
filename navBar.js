@@ -27,7 +27,7 @@ window.onscroll = function () {
 };
 
 window.onload = function () {
-  const M = document.getElementsByTagName("g");
+  const M = document.querySelectorAll(`[stroke-linecap]`);
   console.log(M.length);
   for (let i = 0; i < M.length; i++) {
     let opacityCasuale = Math.floor(Math.random() * 2);
@@ -39,5 +39,5 @@ window.onload = function () {
     let currentOpacity = parseFloat(M[indexM].style.opacity);
     let newOpacity = currentOpacity === 0 ? 1 : 0;
     M[indexM].setAttribute("style", `opacity: ${newOpacity}`);
-  }, 300);
+  }, 200);
 };
